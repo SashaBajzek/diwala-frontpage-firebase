@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { TextData } from '../../api/texts';
 
-import AnimatedToken from '../animated/Token';
+import AnimatedToken from '../animated_token/AnimatedToken';
 
 export default function Hero(props: { text: TextData, textId: string, tokenVersion?: string }) {
   const tokenTextObj = props.text.value.find((text: any) => {
