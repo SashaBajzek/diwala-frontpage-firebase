@@ -16,7 +16,7 @@
   }
   &__logo {
     align-items: center;
-    background-image: url("../../../graphics/Diwala_Token3.png");
+    /* background-image: url("../../../graphics/Diwala_Token3.png"); */
     &.purple{
       background-image: url("../../../graphics/Diwala_Token.png");
     }
@@ -53,6 +53,8 @@
     max-width: 458px;
     font-size: 36px;
     margin: 0;
+    position: absolute;
+    z-index: 1;
     @include breakpoint(1200px) {
       font-size: 32px;
       max-width: 420px;
