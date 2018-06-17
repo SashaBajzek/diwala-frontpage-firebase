@@ -6,11 +6,11 @@ export default function AnimatedToken(props: any) {
     <defs>
       <radialGradient id="smallGradient" fx="50%" fy="50%">
         <stop offset="0%" stop-color="#FFDE7E">
-          <animate attributeName="stop-color" values="#FFDE7E; #BC41B0; #FFDE7E" dur="10s" repeatCount="indefinite" />
+          <animate attributeName="stop-color" values="#FFDE7E;" dur="10s" repeatCount="indefinite" />
         </stop>
-        <stop offset="75%" stop-color="#BC41B0"/>
+        <stop offset="85%" stop-color="#BC41B0"/>
         <stop offset="100%" stop-color="#7C07C9"/>
-        <animate attributeName="fx" dur="10s" from="100%" to="0%" repeatCount="indefinite" />
+        <animate attributeName="fx" dur="10s" from="150%" to="0%" repeatCount="indefinite" />
       </radialGradient>
     </defs>
     <g>

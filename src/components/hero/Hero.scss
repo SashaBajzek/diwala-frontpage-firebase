@@ -1,5 +1,46 @@
 @import "../../core/styles/utilities";
 
+// .AnimatedToken {
+//   overflow: hidden;
+// }
+
+// .AnimatedToken__svg {
+//   max-width: 458px;
+//     font-size: 36px;
+//     margin: 0;
+//     position: absolute;
+//     z-index: 1;
+// }
+
+// .AnimatedToken__path {
+//   fill: rgba(0,0,0,0);
+// }
+
+.AnimatedTokenInverted__svg {
+  animation: background-spin 4s infinite linear;
+  background-image: url("../../../graphics/Diwala Token_Wrapper copy.png");
+  background-position: 100% center;
+  background-repeat: repeat;
+  background-size: 200% 100%;
+  max-width: 458px;
+  overflow: hidden;
+  position: relative;
+  width: 60%;
+}
+
+@keyframes background-spin {
+	0% {
+    background-position: 100% center;
+  }
+	100% {
+    background-position: -100% center;
+  }
+}
+
+.AnimatedTokenInverted__path {
+  fill:white;
+}
+
 .website-hero {
   position: absolute;
   top: 0;
@@ -75,7 +116,7 @@
     font-size: 36px;
     margin: 0;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     @include breakpoint(1200px) {
       font-size: 32px;
       max-width: 420px;
